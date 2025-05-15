@@ -256,42 +256,42 @@ private class LabelSwitchPart {
     
  
     ///  For InterfaceBuilder
-    @IBInspectable var lBackColor: UIColor = .white {
+    @IBInspectable public var lBackColor: UIColor = .white {
         didSet{
             guard switchConfigL != nil else { return }
             switchConfigL.backgroundColor = lBackColor
         }
     }
     
-    @IBInspectable var rBackColor: UIColor = .white {
+    @IBInspectable public var rBackColor: UIColor = .white {
         didSet{
             guard switchConfigR != nil else { return }
             switchConfigR.backgroundColor = rBackColor
         }
     }
     
-    @IBInspectable var lTextColor: UIColor = .white {
+    @IBInspectable public var lTextColor: UIColor = .white {
         didSet{
             guard switchConfigL != nil else { return }
             switchConfigL.textColor = lTextColor
         }
     }
     
-    @IBInspectable var rTextColor: UIColor = .white {
+    @IBInspectable public  var rTextColor: UIColor = .white {
         didSet{
             guard switchConfigR != nil else { return }
             switchConfigR.textColor = rTextColor
         }
     }
     
-    @IBInspectable var lText: String = "" {
+    @IBInspectable public var lText: String = "" {
         didSet{
             guard switchConfigL != nil else { return }
             switchConfigL.text = lText
         }
     }
     
-    @IBInspectable var rText: String = "" {
+    @IBInspectable public var rText: String = "" {
         didSet{
             guard switchConfigR != nil else { return }
             switchConfigR.text = rText
